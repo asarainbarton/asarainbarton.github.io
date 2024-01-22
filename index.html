@@ -27,9 +27,10 @@
             width: 100%;
         }
 
-        .navbar-brand 
+        .navbar-brand.headerfont
         {
-            font-family: 'Roboto Slab', serif;
+            font-family: 'Abel', serif;
+            font-size: 32px;
         }
 
         .large-icon 
@@ -42,12 +43,55 @@
             border-bottom: 2px solid #000; /* Change color as needed */
         }
 
+        .row::after 
+        {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .column.left
+        {
+            /* float: left; */
+            width: 32.32%;
+            padding: 10px;
+            margin-left: 20px;
+            /* display: grid;
+            place-items: center; */
+        }
+
+        .column.middle
+        {
+            /* float: left; */
+            width: 32.32%;
+            padding: 10px;
+            margin-right: 0px;
+            /* margin-left: 15px; */
+        }
+
+        .column.right
+        {
+            /* float: left; */
+            width: 32.32%;
+            padding: 10px;
+            margin-right: 20px;
+            margin-top: 20px;
+            /* margin-left: 15px; */
+        }
+
+        .column img 
+        {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid black;
+        }
+
     </style>
 </head>
 <body>
     <!-- Navigation bar to switch to different parts of my webpage (Referenced from navBar.html file) -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <span class="navbar-brand">Asa Barton</span>
+        <span class="navbar-brand headerfont">Asa Barton</span>
         <div class="collapse navbar-collapse d-none d-sm-block">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -75,10 +119,21 @@
         </div>
     </nav>
 
+    <!-- Main body of the 'About Me' page -->
+    <div class="row">
+        <div class="column left">
+            <h2 class = "navbar-brand headerfont">About Me</h2>
+            <p>Some paragraph text...iwudnoqiwudnoqiwudnoqwiudnn  wuhd iuqwhd iuqwhdi quhd iqwuhd iquwhdiq wdhq wiudhqiud hqiwudh iqwudh qiudh qiwdh qiduhq iwudh qiuwdh qiuwdh iqudhq </p>
+        </div>
+        <div class="column middle">
+            <h2 class = "navbar-brand headerfont">Education</h2>
+            <p>Some paragraph text...iwudnoqiwudnoqiwudnoqwiudnn  wuhd iuqwhd iuqwhdi quhd iqwuhd iquwhdiq wdhq wiudhqiud hqiwudh iqwudh qiudh qiwdh qiduhq iwudh qiuwdh qiuwdh iqudhq </p>
+        </div>
+        <div class="column right">
+            <img src="me.jpg" alt="Image Description">
+        </div>
+    </div>
 
-    <p>
-        About Me!!!
-    </p>
 
     <!-- Link to Bootstrap JavaScript and its dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
