@@ -19,83 +19,15 @@
     <title>Asa Barton Homepage</title>
 
     <!-- Additional Style definitions are made here! -->
-    <style>
-        .navbar 
-        {
-            /* position: fixed; */
-            top: 0;
-            width: 100%;
-        }
-
-        .navbar-brand.headerfont
-        {
-            font-family: 'Abel', serif;
-            font-size: 32px;
-        }
-
-        .large-icon 
-        {
-            font-size: 32px;
-        }
-
-        .nav-link.active 
-        {
-            border-bottom: 2px solid #000; /* Change color as needed */
-        }
-
-        .row::after 
-        {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        .column.left
-        {
-            /* float: left; */
-            width: 32.32%;
-            padding: 10px;
-            margin-left: 20px;
-            /* display: grid;
-            place-items: center; */
-        }
-
-        .column.middle
-        {
-            /* float: left; */
-            width: 32.32%;
-            padding: 10px;
-            margin-right: 0px;
-            /* margin-left: 15px; */
-        }
-
-        .column.right
-        {
-            /* float: left; */
-            width: 32.32%;
-            padding: 10px;
-            margin-right: 20px;
-            margin-top: 20px;
-            /* margin-left: 15px; */
-        }
-
-        .column img 
-        {
-            max-width: 100%;
-            height: auto;
-            border: 5px solid black;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <!-- Navigation bar to switch to different parts of my webpage (Referenced from navBar.html file) -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <span class="navbar-brand headerfont">Asa Barton</span>
         <div class="collapse navbar-collapse d-none d-sm-block">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">About Me</a>
+                    <a class="nav-link active" href="index.html">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="projects.html">Projects</a>
@@ -119,20 +51,49 @@
         </div>
     </nav>
 
-    <!-- Main body of the 'About Me' page -->
+    <!-- Main body top row of the 'About Me' page -->
     <div class="row">
         <div class="column left">
-            <h2 class = "navbar-brand headerfont">About Me</h2>
-            <p>Some paragraph text...iwudnoqiwudnoqiwudnoqwiudnn  wuhd iuqwhd iuqwhdi quhd iqwuhd iquwhdiq wdhq wiudhqiud hqiwudh iqwudh qiudh qiwdh qiduhq iwudh qiuwdh qiuwdh iqudhq </p>
+            <h2 class="navbar-brand namefont">Asa<br>Barton</h2>
         </div>
         <div class="column middle">
-            <h2 class = "navbar-brand headerfont">Education</h2>
-            <p>Some paragraph text...iwudnoqiwudnoqiwudnoqwiudnn  wuhd iuqwhd iuqwhdi quhd iqwuhd iquwhdiq wdhq wiudhqiud hqiwudh iqwudh qiudh qiwdh qiduhq iwudh qiuwdh qiuwdh iqudhq </p>
-        </div>
-        <div class="column right">
             <img src="me.jpg" alt="Image Description">
         </div>
+        <div class="column right">
+        </div>
     </div>
+
+    <!-- Main body bottom row of the 'About Me' page -->
+    <div class = "row">
+        <div class="column left2">
+        </div>
+        <div class="column middlebottom">
+            <p> 
+                From operating systems architecture to networking and design,
+                I am deeply passionate about exploring the fascinating realm
+                of technology. Each aspect of computer science offers a nearly
+                limitless amount of knowledge. At present, I attend the
+                University of California Irvine with expected graduation 
+                June 2024. My favorite projects can be viewed 
+                <a href="projects.html">here</a>.
+            </p>
+        </div>
+    </div>
+
+    <!-- Draw the line at bottom of page -->
+    <div class = "row">
+        <p>" "</p>
+    </div>
+    <div class = "row">
+        <div class="column leftbottom">
+        </div>
+        <div class="column rightbottom">
+            <hr style="border: none; border-top: 5px solid black;">
+        </div>
+    </div>
+
+
+    
 
 
     <!-- Link to Bootstrap JavaScript and its dependencies -->
