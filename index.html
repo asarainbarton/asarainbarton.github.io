@@ -92,7 +92,26 @@
         </div>
     </div>
 
-
+    <script>
+        // This javascript code executes every time the user's window size changes
+        window.addEventListener('resize', function() 
+        {
+            if (window.innerHeight > window.innerWidth) 
+            {
+                document.querySelector('.column.middlebottom').classList.remove('landscape');
+                document.querySelector('.column.middlebottom').classList.add('portrait');
+                document.querySelector('.column.left2').classList.remove('landscape');
+                document.querySelector('.column.left2').classList.add('portrait');
+            } 
+            else 
+            {
+                document.querySelector('.column.middlebottom').classList.remove('portrait');
+                document.querySelector('.column.middlebottom').classList.add('landscape');
+                document.querySelector('.column.left2').classList.remove('portrait');
+                document.querySelector('.column.left2').classList.add('landscape');
+            }
+        });
+    </script>
     
 
 
