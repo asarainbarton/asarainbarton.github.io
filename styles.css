@@ -69,6 +69,8 @@
 .column.left2.portrait 
 {
     width: 0%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .column.leftbottom
